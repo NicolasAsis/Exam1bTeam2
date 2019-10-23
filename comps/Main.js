@@ -1,6 +1,8 @@
 import React from 'react';
-import {View,Text} from 'react-native';
 import Right from './Right';
+import PopUp from './Popup';
+import {View,Text} from 'react-native';
+
 
 function Main(){
     return(
@@ -9,11 +11,12 @@ function Main(){
             display:'flex',
             height:'100%'
         }}>
-            {/* <View style={{
-                backgroundColor:'blue',
+            <View style={{
+                backgroundColor:'white',
                 height:'100%',
                 flex:2
-            }}></View> */}
+            }}><PopUp /></View>
+               
             <Right />
         </View>
     );
