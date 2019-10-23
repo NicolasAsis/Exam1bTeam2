@@ -6,7 +6,7 @@ function Main(){
     return(
         <View>
             <Text>App</Text>
-            <PopUp></PopUp>
+            <PopUp />
         </View>
     );
 }
