@@ -2,10 +2,16 @@ import React from 'react';
 import Right from './Right';
 import PopUp from './Popup';
 import {View,Text} from 'react-native';
+import Settings from './Settings';
 
 
 function Main(){
     return(
+
+        <View>
+            <Text>App</Text>
+            <Settings />
+
         <View style={{
             flexDirection:'row',
             display:'flex',
@@ -18,6 +24,7 @@ function Main(){
             }}><PopUp /></View>
                
             <Right />
+
         </View>
     );
 }
