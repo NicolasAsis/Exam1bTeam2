@@ -5,33 +5,41 @@ import StyleSheet from 'react-native';
 
 function PopUp(){
 
-const [isClicks, setIsClicks] = useState(1);
-const [isFlex, setIsFlex] = useState("flex-end");
+
+const [isFlex, setIsFlex] = useState(true);
+const [isClicks, setIsClicks] = useState(0)
+
+let text = "";
+
 
 if (isClicks >= 3){
+  text = "Toast";
   setIsClicks(0);
-  setIsFlex("flex-end")
-  
+}
+
+if (isClicks === 0){
+  text = "Toast";
 } 
 
 if (isClicks === 1){
-  setIsFlex("flex-start")
+  text = "Toast moved up";
 }
 
 if (isClicks === 2){
-  setIsFlex("start-end")
+  text = "toast moved down";
 }
 
 
  return (
-    <View style={{display:"flex", flexDirection:"row", alignItems:isFlex, backgroundColor:"green", height:"100%"}}>
+    <View style={{display:"flex", flexDirection:"row", alignItems:isFlex ? "flex-end" : "flex-start" , height:"90%"}}>
       
        <TouchableOpacity
-       onPress={()=>{setIsClicks(isClicks + 1)}}
+       onPress={()=>{setIsFlex(!isFlex), setIsClicks(isClicks + 1)}}
+  
          
        >
          <Text
-          style={{height:60, width:60, backgroundColor:'teal'}}>{isClicks}</Text>
+          style={{height:60, width:200, backgroundColor:'teal', borderRadius:20, fontSize:18, textAlign:"center"}}>{text}</Text>
 
        </TouchableOpacity>
      
