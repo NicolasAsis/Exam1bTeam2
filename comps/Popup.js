@@ -26,12 +26,16 @@ if (isClicks === 1){
 }
 
 if (isClicks === 2){
-  text = "toast moved down";
+  text = "Toast moved down";
 }
 
 
  return (
-    <View style={{display:"flex", flexDirection:"row", alignItems:isFlex ? "flex-end" : "flex-start" , height:"90%"}}>
+    <View style={{
+      display:"flex", 
+      flexDirection:"row", 
+      alignItems:isFlex ? "flex-end" : "flex-start" , 
+      height:"90%"}}>
       
        <TouchableOpacity
        onPress={()=>{setIsFlex(!isFlex), setIsClicks(isClicks + 1)}}
