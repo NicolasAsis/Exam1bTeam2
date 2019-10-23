@@ -14,7 +14,7 @@ let text = "";
 
 if (isClicks >= 3){
   text = "Toast";
-  setIsClicks(0);
+  setIsClicks(1);
 }
 
 if (isClicks === 0){
