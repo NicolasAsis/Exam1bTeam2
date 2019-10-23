@@ -8,11 +8,15 @@
 
 import React from 'react';
 import Main from './comps/Main';
+import PopUp from './comps/Popup';
+
 
 function App(){
   return(
     <Main />
+ 
   );
+
 }
 
 export default App;
