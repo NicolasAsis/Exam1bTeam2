@@ -6,13 +6,13 @@ var styles = StyleSheet.create({
     height: 50,
     width: 50,
     right:0,
-    bottom:0
+    bottom:0,
 
   },
 
   background:{
     backgroundColor: 'gray',
-    opacity: 0.5,
+    opacity: 0.3,
     height: 600
 
   },
@@ -20,6 +20,15 @@ var styles = StyleSheet.create({
   closeBt: {
     justifyContent: 'center',
     alignItems: 'center',
+
+  },
+
+  gearBt:{
+    flexDirection:'row',
+    alignItems:'flex-end',
+    height:650,
+    position:'absolute',
+    right:0
 
   }
 
