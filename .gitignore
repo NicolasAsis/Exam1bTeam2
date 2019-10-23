@@ -38,6 +38,11 @@ jspm_packages/
 android/
 ios/
 package-lock.json
+.buckconfig
+.eslintrc.js
+.flowconfig
+.gitattributes
+.watchmanconfig
 
 # TypeScript v1 declaration files
 typings/
