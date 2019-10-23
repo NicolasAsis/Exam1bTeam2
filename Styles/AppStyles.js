@@ -5,7 +5,8 @@ var styles = StyleSheet.create({
   image:{
     height: 50,
     width: 50,
-  
+    right:0,
+    bottom:0
 
   },
 
@@ -16,9 +17,10 @@ var styles = StyleSheet.create({
 
   },
 
-  sendBt: {
+  closeBt: {
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+
   }
 
 })

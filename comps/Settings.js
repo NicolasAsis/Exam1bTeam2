@@ -5,14 +5,14 @@ import styles from '../Styles/AppStyles'
 function Settings(){
 
   const [showMenu, setShowMenu] = useState(false);
-
-
   var menu = null;
  if(showMenu === true){
 
    menu = (
      <View style={styles.background}>
      <Button
+      style={styles.closeBt}
+       color="black"
        title="Close"
        onPress={()=>{ setShowMenu(!showMenu)}}
      />
@@ -21,8 +21,6 @@ function Settings(){
    );
 
  }
-
-
     return(
         <View>
         {menu}
@@ -36,8 +34,6 @@ function Settings(){
          </TouchableOpacity>
 
         </View>
-
-
 
     );
 }
